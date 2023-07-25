@@ -31,6 +31,9 @@ typedef struct listint_s
 
 void swap(int *a, int *b);
 void swapNodes(listint_t **list, listint_t **node1, listint_t *node2);
+void lomuto_sort(int *array, size_t size, int left, int right);
+int lomuto_partition(int *array, size_t size, int left, int right);
+
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
